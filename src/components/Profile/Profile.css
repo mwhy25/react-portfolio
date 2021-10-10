@@ -1,5 +1,5 @@
 .profile {
-    background-color: white;
+    background-color: #fffd;
     border-radius: 6px;
     width: 100%;
     display: inline-block;
@@ -24,9 +24,40 @@
 
 .profile_image {
     margin-top: -10px;
-    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
-    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+
 }
-.profile_image img{
+
+.profile_image img {
     width: 100%;
+}
+
+.profile_information {
+    top: 0;
+    left: 0;
+    margin: -40p 10px 30px;
+}
+
+.profile_information .timeline .timeline_content {
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.timelineItem_text {
+    font-size: 13.5px !important;
+    color:#777 !important;
+    font-weight: 400 !important;
+}
+
+
+.timelineItem_text > span {
+color: #000900 !important;
+}
+
+.timelineItem_text > a {
+    text-decoration: none;
+    font-size: 13.5px !important;
+    color:#777 !important;
+    font-weight: 400 !important;
 }

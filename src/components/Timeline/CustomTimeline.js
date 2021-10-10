@@ -9,7 +9,6 @@ import {
 } from "@mui/lab";
 import "./Timeline.css";
 import { Typography } from "@material-ui/core";
-import WorkIcon from "@mui/icons-material/Work";
 
 const CustomTimeline = ({ title, icon, children }) => {
   return (
@@ -19,7 +18,6 @@ const CustomTimeline = ({ title, icon, children }) => {
         <TimelineSeparator>
           <TimelineDot className={"timeline_dot_header"}>
             {icon}
-            {/* <WorkIcon /> */}
           </TimelineDot>
           {/* Untuk Tanda Lingkaran */}
           <TimelineConnector /> {/* Untuk Garis kebawah */}
@@ -32,13 +30,9 @@ const CustomTimeline = ({ title, icon, children }) => {
         {/* Untuk Isi */}
       </TimelineItem>
 
-      {children}
 
       {/* Item Remaining */}
-      <TimelineItem>
-        <CustomTimelineSeparator />
-        <TimelineContent>Tes 2</TimelineContent>
-      </TimelineItem>
+      {children}
     </Timeline>
   );
 };
@@ -46,7 +40,7 @@ const CustomTimeline = ({ title, icon, children }) => {
 export const CustomTimelineSeparator = () => (
   <TimelineSeparator className={"separator_padding"}>
     <TimelineDot variant={"outlined"}className={"timeline_dot"} />
-    <TimelineConnector />
+    <TimelineConnector/>
   </TimelineSeparator>
 );
 
