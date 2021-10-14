@@ -5,11 +5,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 
 const resumeData = {
-    name: "Sam is Coding",
-    title: "Full Stack",
-    birthday: "03th March 1995",
+    name: "Muhammad Wahyu",
+    title: "Web Developer",
+    birthday: "25th March 1995",
     email: "mwhy25@gmail.com",
-    address: "jalan sekian lama bertemu",
+    // address: "jalan sekian lama bertemu",
     phone: "0897-8178-756",
   
     socials: {
