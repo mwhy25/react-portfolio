@@ -1,8 +1,8 @@
 import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link, NavLink, withRouter } from "react-router-dom";
+import {  Nav, Navbar } from "react-bootstrap";
+import {  NavLink, withRouter } from "react-router-dom";
 import { HomeRounded, Telegram } from "@material-ui/icons";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../Button/CustomButton";
@@ -25,20 +25,32 @@ const Header = (props) => {
           <Nav.Link
             as={NavLink}
             to="/"
-            className={pathName == "/" ? "header_link_active" : "header_link"}
+            className={pathName === "/" ? "header_link_active" : "header_link"}
           >
             Resume
           </Nav.Link>
+         
 
           {/* Portfolio Link */}
           <Nav.Link
             as={NavLink}
             to="/portfolio"
             className={
-              pathName == "/portfolio" ? "header_link_active" : "header_link"
+              pathName === "/portfolio" ? "header_link_active" : "header_link"
             }
           >
             Portfolio
+          </Nav.Link>
+
+          {/* Contact link */}
+          <Nav.Link
+            as={NavLink}
+            to="/yes"
+            className={
+              pathName === "/yes" ? "header_link_active" : "header_link"
+            }
+          >
+            Yes
           </Nav.Link>
         </Nav>
 

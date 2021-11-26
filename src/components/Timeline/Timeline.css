@@ -22,7 +22,7 @@
 }
 
 .timeline .timeline_dot_header {
-    color: black !important;
+    color: var(--font-color) !important;
     background-color: var(--main-color) !important;
     font-size: small !important;
     padding: 10px !important;
@@ -32,7 +32,7 @@
 /* Remaining Items */
 
 .timeline .timeline_dot {
-    color: black !important;
+    color: var(--font-color) !important;
     background-color: var(--main-color) !important;
     padding: 2px !important;
 }

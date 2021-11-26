@@ -6,6 +6,7 @@ import Profile from "./components/Profile/Profile";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -22,9 +23,14 @@ function App() {
                 <Route path="/portfolio">
                   <Portfolio />
                 </Route>
-                <Route path="/">
+                <Route exact path="/">
                   <Resume />
                 </Route>
+              
+                <Route path="/yes">
+                  <Contact />
+                </Route>
+                
               </Switch>
             </div>
           </Router>

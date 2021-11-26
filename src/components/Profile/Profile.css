@@ -1,5 +1,5 @@
 .profile {
-    background-color: #fffd;
+    background-color: var(--back-color);
     border-radius: 6px;
     width: 100%;
     display: inline-block;
@@ -52,7 +52,7 @@
 
 
 .timelineItem_text > span {
-color: #000900 !important;
+color: var(--font-color) !important;
 }
 
 .timelineItem_text > a {

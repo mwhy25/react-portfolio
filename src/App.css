@@ -1,10 +1,15 @@
 :root {
-  --main-color: #f0df71;
+  --main-color: #F4F471;
+  --second-color:#71ECB3;
+  --font-color:#13130F;
+  --shadow-color:#878A8E;
+  --back-color:#FFFFFF;
+  
 }
 .container_shadow {
-  box-shadow: 0px 2px 92px 0px #282c34;
-  -webkit-box-shadow: 0px 2px 92px 0px #282c34;
-  -moz-box-shadow: 0px 2px 92px 0px #282c34;
+  box-shadow: 0px 2px 20px 0px var(--shadow-color);
+  -webkit-box-shadow: 0px 2px 20px 0px var(--shadow-color);
+  -moz-box-shadow: 0px 2px 20px 0px var(--shadow-color);
 }
 .top_60 {
   margin-top: 60px !important;
