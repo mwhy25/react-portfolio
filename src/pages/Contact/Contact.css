@@ -1,0 +1,22 @@
+
+
+.backimage {
+    color:#E1E7E0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/contact-us.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-subs{
+    color:var(--shadow-color);
+    font-style: italic;
+}
+.glass-effect{
+    background-color: #ffffff10;
+    backdrop-filter:blur(12px);
+    --webkit-backdrop-filter:blur(12px);
+    margin: 0px 10% ;
+    
+}
